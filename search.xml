@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Androoid Studio 踩坑记录]]></title>
     <url>%2FWWWeb%2FAndroid-Studio%2FAndrooid-Studio-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[1. 快捷键: 快捷键 说明 Ctrl+Q 显示当前调用的方法的参数说明 Ctrl+Shift+F10 编译并运行程序 Ctrl+Alt+L 格式化代码,并自动对齐 Alt+Insert 快速插入get/set方法,以及构造方法等.. 经常需要重写的方法 Ctrl+Insert 快速新建一个类,活动或者服务 Ctrl+Alt+Left/Right 选中往左/右的一个代码单词 就可以不用一个个字母缓慢移动选中了 Ctrl+Alt+O 自动清除导入的包但是没有使用过的 Ctrl+Shift+Space 代码智能提示, 会自动补全 Ctrl+Alt+Space 代码提示,显示可能的构造方法或者接口 Ctrl+Shift+Up/Down 选中的代码向上或者向下移动 F2 快速跳转到代码报错的那一行 2. 故障解决:1. 运行安卓虚拟机出现:Emulator: Could not launch ‘C:\Users\H\AppData\Local\Android\Sdk\emulator/qemu/windows-x86_64/qemu-system-i386.exe’: No such file or directory 进入SDK Manager/SDK Tools 中将Android Emulator选中,点击apply等待下载完毕以后,确定退出,重新启动模拟器就可以运行了. 2.如何重启android studio的虚拟机 长按虚拟机的关机图标会跳出两个选项 (关机/重新启动); 3.怎么看调用一个方法时需要的参数？ 方法1：Ctrl+Q 方法2：Ctrl 然后鼠标移动到相应的方法上面。 2.写代码时，发现某个地方有下划红线怎么快速跳转到这个地方？ 按F2，先跳转到类 再按F2就可以跳转到相应的方法或者代码语句中。]]></content>
       <categories>
         <category>Android Studio</category>
       </categories>
