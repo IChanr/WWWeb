@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Android 面试题]]></title>
     <url>%2FWWWeb%2FAndroid%2FAndroid-%E9%9D%A2%E8%AF%95%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[Activity篇1. 常规的生命周期 生命周期如图所示。 onCreate在活动第一次被创建的时候调用，可以用来执行一些资源的初始化和布局的加载。 onStart当活动可见的时候被调用。 onResume当活动被加载到前台的时候被调用。 onPause启动另外一个新的活动的时候该方法被调用。 onStop当前的activity不可见时被调用，不能执行一些太耗时的操作，避免影响其他活动的启动。 onRestart返回上一个活动或者重新返回应用界面时被调用。 onDestroy当前活动被销毁时被调用。 2.onStart()和onResume()/onPause()和onStop()的区别？ onStart()和onStop()是根据当前这个活动是否可见来回调的。 onResume()和onPause()是根据当前这个活动是否在前台来回调的。 3.Activity A启动另一个Activity B会回调哪些方法？如果Activity B是完全透明呢？如果启动的是一个对话框Activity呢？ 官方文档说明，必须执行完pause之后，新的活动才能被启动。 也可以通过看源码得知不过现在水平不够看不懂。 如果是透明的活动，启动之后旧的活动的onStop不会被回调，因为还可见，如果不可见就会被调用执行。 4.谈谈onSaveInstanceState()方法？何时会调用？5.onSaveInstanceState()与onPause()的区别？6.如何避免配置改变时Activity重建？7.优先级低的Activity在内存不足被回收后怎样做可以恢复到销毁前状态？8.说下Activity的四种启动模式？（有时会出个实际问题来分析返回栈中Activity的情况）9.谈谈singleTop和singleTask的区别以及应用场景10.onNewIntent()调用时机？11.了解哪些Activity启动模式的标记位？12.如何启动其他应用的Activity？13.Activity的启动过程？14.。。。Fragment篇1.]]></content>
+    <content type="text"><![CDATA[从简述上摘抄下来，在做一遍。 Activity篇Q: 常规的生命周期 生命周期如图所示。 onCreate在活动第一次被创建的时候调用，可以用来执行一些资源的初始化和布局的加载。 onStart当活动可见的时候被调用。 onResume当活动被加载到前台的时候被调用。 onPause启动另外一个新的活动的时候该方法被调用。 onStop当前的activity不可见时被调用，不能执行一些太耗时的操作，避免影响其他活动的启动。 onRestart返回上一个活动或者重新返回应用界面时被调用。 onDestroy当前活动被销毁时被调用。 Q:onStart()和onResume()/onPause()和onStop()的区别？ onStart()和onStop()是根据当前这个活动是否可见来回调的。 onResume()和onPause()是根据当前这个活动是否在前台来回调的。 Q:Activity A启动另一个Activity B会回调哪些方法？如果Activity B是完全透明呢？如果启动的是一个对话框Activity呢？ 官方文档说明，必须执行完pause之后，新的活动才能被启动。 也可以通过看源码得知不过现在水平不够看不懂。 如果是透明的活动，启动之后旧的活动的onStop不会被回调，因为还可见，如果不可见就会被调用执行。 Q:.谈谈onSaveInstanceState()方法？何时会调用？ asda Q:onSaveInstanceState()与onPause()的区别？ Q:如何避免配置改变时Activity重建？ Q:优先级低的Activity在内存不足被回收后怎样做可以恢复到销毁前状态？ Q:.说下Activity的四种启动模式？（有时会出个实际问题来分析返回栈中Activity的情况） Q:谈谈singleTop和singleTask的区别以及应用场景 Q:onNewIntent()调用时机？ Q:了解哪些Activity启动模式的标记位？ Q:如何启动其他应用的Activity？ Q:.Activity的启动过程？ Fragment篇1.]]></content>
       <categories>
         <category>Android</category>
       </categories>
@@ -25,17 +25,17 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[Hexo界面配置]]></title>
-    <url>%2FWWWeb%2FHexo%2FHexo%E7%95%8C%E9%9D%A2%E9%85%8D%E7%BD%AE%2F</url>
-    <content type="text"><![CDATA[主题config.yml设置 通过修改主题目录下的__config.yml文件来更改显示效果，以下内容都是修改自内部的那个配置文件 显示动态的背景：移动鼠标会自动连接和断开线条 #Canvas-nestcanvas_nest: false 把里面的false修改为true即可。 设置菜单 想要显示或者隐藏菜单项只需要添加#或者删除 12345678910111213# Value before `||` delimeter is the target link.# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.menu: home: / || home about: /about/ || user #tags: /tags/ || tags categories: /categories/ || th archives: /archives/ || archive #schedule: /schedule/ || calendar #sitemap: /sitemap.xml || sitemap #commonweal: /404/ || heartbeat## 根目录__config.yml配置 设置侧栏设置头像 avatar: /images/avatar.gif 可以设置站点内也可以设置为外链 不想要显示的话 加一个#就可以了。 avatar: http://pb2rs4133.bkt.clouddn.com/Head.jpg 外部__config.yml设置修改作者名字 author: Cai Han Rong 站点描述 description: 咋咋碎碎念念 集成第三方服务百度统计 登录百度统计获取js?后面的代码 复制粘贴到主题的配置文件中 ，baidu_analytics 这里面。 然后我们就可以通过百度统计到一天之内有多少人访问我们的站点，以及他们的ip 添加设置文章阅读量的功能 https://notes.doublemine.me/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud 很麻烦上面的方法，不过因为next主题已经集成了这个功能 只需要在这个主题的配置文件里面把 leancloud_visitors: enable: false 把里面的false改成true就行了，当然还有id和key 站内搜索 安装 hexo-generator-searchdb，在站点的根目录下执行以下命令： $ npm install hexo-generator-searchdb –save 编辑 站点配置文件，新增以下内容到任意位置： 123456&gt; search:&gt; path: search.xml&gt; field: post&gt; format: html&gt; limit: 10000&gt; 编辑 主题配置文件，启用本地搜索功能： 1234&gt; # Local search&gt; local_search:&gt; enable: true&gt; 故障问题点击菜单项出现404或者文件不存在的解决办法 点击分类出现404的时候，是因为本地没有生成相对应的页面。 123456&gt; hexo new page categories&gt; 默认下source/categories/ 文件夹下面创建一个index.md 这个将会是我们等等展示的分类页面，&gt; 需要添加一个属性 ， 输入 type: categories。 不输入的话页面上只显示分类页面但是里面没有具体的分类项。&gt; &gt; 同理 点击菜单上的关于出现404的时候， hexo new page about 即可。&gt; 站内文章链接 _config.yml 中有个permalink的设置。比如你设成 :category/:title/ 路径就是分类/标题，而不是按时间来做路径了，这个是可以随意配置的。 这个里面就可以填写相对链接了，因为他是根据分类和标题来生成目录的。]]></content>
+    <title><![CDATA[Hexo使用记录导航]]></title>
+    <url>%2FWWWeb%2FHexo%2FHexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95%E5%AF%BC%E8%88%AA%2F</url>
+    <content type="text"><![CDATA[Hexo常用命令 Hexo环境搭建 Hexo界面配置 Hexo部署到GitHub]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[Hexo使用记录导航]]></title>
-    <url>%2FWWWeb%2FHexo%2FHexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95%E5%AF%BC%E8%88%AA%2F</url>
-    <content type="text"><![CDATA[Hexo常用命令 Hexo环境搭建 Hexo界面配置 Hexo部署到GitHub]]></content>
+    <title><![CDATA[Hexo常用命令]]></title>
+    <url>%2FWWWeb%2FHexo%2FHexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[hexo clean 清理Hexo的缓存 hexo s –debug 启动本地Hexo站点，并且开启调试模式。 hexo new “pager” 在_posts目录下面创建一个叫pager.md的文件，里面自动帮我满写好了标题和创建事件。 hexo p = hexo publishhexo g = hexo generate 在本地生成html等文件 hexo s = hexo server 在本地启动服务预览，可以查看生成的静态网页是什么样子的。 hexo d = hexo deploy 将本地生成的网页部署到其他地方。]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
@@ -49,9 +49,9 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[Hexo常用命令]]></title>
-    <url>%2FWWWeb%2FHexo%2FHexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[hexo clean 清理Hexo的缓存 hexo s –debug 启动本地Hexo站点，并且开启调试模式。 hexo new “pager” 在_posts目录下面创建一个叫pager.md的文件，里面自动帮我满写好了标题和创建事件。 hexo p = hexo publishhexo g = hexo generate 在本地生成html等文件 hexo s = hexo server 在本地启动服务预览，可以查看生成的静态网页是什么样子的。 hexo d = hexo deploy 将本地生成的网页部署到其他地方。]]></content>
+    <title><![CDATA[Hexo界面配置]]></title>
+    <url>%2FWWWeb%2FHexo%2FHexo%E7%95%8C%E9%9D%A2%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[主题config.yml设置 通过修改主题目录下的__config.yml文件来更改显示效果，以下内容都是修改自内部的那个配置文件 显示动态的背景：移动鼠标会自动连接和断开线条 #Canvas-nestcanvas_nest: false 把里面的false修改为true即可。 设置菜单 想要显示或者隐藏菜单项只需要添加#或者删除 12345678910111213# Value before `||` delimeter is the target link.# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.menu: home: / || home about: /about/ || user #tags: /tags/ || tags categories: /categories/ || th archives: /archives/ || archive #schedule: /schedule/ || calendar #sitemap: /sitemap.xml || sitemap #commonweal: /404/ || heartbeat## 根目录__config.yml配置 设置侧栏设置头像 avatar: /images/avatar.gif 可以设置站点内也可以设置为外链 不想要显示的话 加一个#就可以了。 avatar: http://pb2rs4133.bkt.clouddn.com/Head.jpg 外部__config.yml设置修改作者名字 author: Cai Han Rong 站点描述 description: 咋咋碎碎念念 集成第三方服务百度统计 登录百度统计获取js?后面的代码 复制粘贴到主题的配置文件中 ，baidu_analytics 这里面。 然后我们就可以通过百度统计到一天之内有多少人访问我们的站点，以及他们的ip 添加设置文章阅读量的功能 https://notes.doublemine.me/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud 很麻烦上面的方法，不过因为next主题已经集成了这个功能 只需要在这个主题的配置文件里面把 leancloud_visitors: enable: false 把里面的false改成true就行了，当然还有id和key 站内搜索 安装 hexo-generator-searchdb，在站点的根目录下执行以下命令： $ npm install hexo-generator-searchdb –save 编辑 站点配置文件，新增以下内容到任意位置： 123456&gt; search:&gt; path: search.xml&gt; field: post&gt; format: html&gt; limit: 10000&gt; 编辑 主题配置文件，启用本地搜索功能： 1234&gt; # Local search&gt; local_search:&gt; enable: true&gt; 故障问题点击菜单项出现404或者文件不存在的解决办法 点击分类出现404的时候，是因为本地没有生成相对应的页面。 123456&gt; hexo new page categories&gt; 默认下source/categories/ 文件夹下面创建一个index.md 这个将会是我们等等展示的分类页面，&gt; 需要添加一个属性 ， 输入 type: categories。 不输入的话页面上只显示分类页面但是里面没有具体的分类项。&gt; &gt; 同理 点击菜单上的关于出现404的时候， hexo new page about 即可。&gt; 站内文章链接 _config.yml 中有个permalink的设置。比如你设成 :category/:title/ 路径就是分类/标题，而不是按时间来做路径了，这个是可以随意配置的。 这个里面就可以填写相对链接了，因为他是根据分类和标题来生成目录的。]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
