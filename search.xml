@@ -25,17 +25,17 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[Hexo使用记录导航]]></title>
-    <url>%2FWWWeb%2FHexo%2FHexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95%E5%AF%BC%E8%88%AA%2F</url>
-    <content type="text"><![CDATA[Hexo常用命令 Hexo环境搭建 Hexo界面配置 Hexo部署到GitHub]]></content>
+    <title><![CDATA[Hexo环境搭建]]></title>
+    <url>%2FWWWeb%2FHexo%2FHexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[Hexo的安装和配置Git 用于将生成的网站部署到GitHub上面 Node 本地解析.md文件来生成静态网页。 Hexo 通过git bash 选择一个目录进行以下操作。 安装hexo 这是官方的但是下载不了，$ npm install -g hexo-cli 下面的方法可以正常使用。 $ npm install -g cnpm –registry=https://registry.npm.taobao.org$ cnpm install hexo-cli -g 安装完毕以后可以通过 输入 hexo-v 查看hexo的版本和其他的一些信息。 初始化Hexo $ hexo init 安装依赖包 $ npm install 启动hexo hexo server 他会通过node.js生成一个静态网页指定端口让你访问。 至此hexo的配置和安装就完成了。其他的就是写文章和修改主题了。 Hexo目录解释目录： node_modules 存放安装的Hexo的扩展文件。 目录： scaffolds 存放模板的文件，更加具体的可以看这个目录 https://hexo.io/zh-cn/docs/templates.html 大概就是可以生成我们访问网页中的那些导航栏（访问首页，文章，分类的快捷方式） 目录： themes 下载的主题放在这个目录里面，然后在_config.yml中修改使用的主题，到时候生成的网页就是你指定的那种风格了。 目录: source 资源文件夹是存放用户资源的地方。除 _posts 文件夹之外，开头命名为 _ (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。 目录： _posts 我们所有写作的文章.md 都保存在这个目录下面，后面.md会被编译成.html文件。 文件: .gitignore git生成的文件,使用git 推送文件到github上时，这个文件里面记录和文件或者目录将不会被上传。 文件： _config.yml 网站的 配置 信息，您可以在此配置大部分的参数。 比如修改主题，网站名称等绝大部分设置。https://hexo.io/zh-cn/docs/configuration 文件： db.json文件： package.json 初始化时自动创建。 应用程序的信息。可以查看hexo的版本以及安装的扩展版本。 文件： package-lock.json https://docs.npmjs.com/files/package-lock.json 通过这个文件可以自动生成和安装hexo的扩展文件。]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[Hexo环境搭建]]></title>
-    <url>%2FWWWeb%2FHexo%2FHexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%2F</url>
-    <content type="text"><![CDATA[Hexo的安装和配置Git 用于将生成的网站部署到GitHub上面 Node 本地解析.md文件来生成静态网页。 Hexo 通过git bash 选择一个目录进行以下操作。 安装hexo 这是官方的但是下载不了，$ npm install -g hexo-cli 下面的方法可以正常使用。 $ npm install -g cnpm –registry=https://registry.npm.taobao.org$ cnpm install hexo-cli -g 安装完毕以后可以通过 输入 hexo-v 查看hexo的版本和其他的一些信息。 初始化Hexo $ hexo init 安装依赖包 $ npm install 启动hexo hexo server 他会通过node.js生成一个静态网页指定端口让你访问。 至此hexo的配置和安装就完成了。其他的就是写文章和修改主题了。 Hexo目录解释目录： node_modules 存放安装的Hexo的扩展文件。 目录： scaffolds 存放模板的文件，更加具体的可以看这个目录 https://hexo.io/zh-cn/docs/templates.html 大概就是可以生成我们访问网页中的那些导航栏（访问首页，文章，分类的快捷方式） 目录： themes 下载的主题放在这个目录里面，然后在_config.yml中修改使用的主题，到时候生成的网页就是你指定的那种风格了。 目录: source 资源文件夹是存放用户资源的地方。除 _posts 文件夹之外，开头命名为 _ (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。 目录： _posts 我们所有写作的文章.md 都保存在这个目录下面，后面.md会被编译成.html文件。 文件: .gitignore git生成的文件,使用git 推送文件到github上时，这个文件里面记录和文件或者目录将不会被上传。 文件： _config.yml 网站的 配置 信息，您可以在此配置大部分的参数。 比如修改主题，网站名称等绝大部分设置。https://hexo.io/zh-cn/docs/configuration 文件： db.json文件： package.json 初始化时自动创建。 应用程序的信息。可以查看hexo的版本以及安装的扩展版本。 文件： package-lock.json https://docs.npmjs.com/files/package-lock.json 通过这个文件可以自动生成和安装hexo的扩展文件。]]></content>
+    <title><![CDATA[Hexo使用记录导航]]></title>
+    <url>%2FWWWeb%2FHexo%2FHexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95%E5%AF%BC%E8%88%AA%2F</url>
+    <content type="text"><![CDATA[Hexo常用命令 Hexo环境搭建 Hexo界面配置 Hexo部署到GitHub]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
