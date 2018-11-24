@@ -79,19 +79,17 @@
 
 
 
-<meta name="description" content="Broadcast 简述 Android应用可以从Android系统和其他Android应用发送或接收广播消息，类似于 发布 - 订阅 设计模式。 例如，Android系统在发生各种系统事件时发送广播，例如系统启动或设备开始充电时。 例如，应用程序还可以发送自定义广播，以通知其他应用程序他们可能感兴趣的内容（例如，已下载了一些新数据）。 应用可以注册以接收特定广播。当发送广播时，系统自动将广播路由">
+<meta name="description" content="当然还有一些没整理好没发上来。  Android Studio疑难杂症：Androoid Studio 踩坑记录 Android基础：四大组件-服务 四大组件-广播 Android进阶：Android开发艺术探索概要1–Activity的生命周期和启动模式 Android开发艺术探索概要2–IPC机制">
 <meta property="og:type" content="article">
-<meta property="og:title" content="四大组件之广播">
-<meta property="og:url" content="https://ichanr.github.io/WWWeb/uncategorized/四大组件之广播/index.html">
+<meta property="og:title" content="Android 学习记录导航页">
+<meta property="og:url" content="https://ichanr.github.io/WWWeb/Android/Android-学习记录导航页/index.html">
 <meta property="og:site_name" content="Life in a Day">
-<meta property="og:description" content="Broadcast 简述 Android应用可以从Android系统和其他Android应用发送或接收广播消息，类似于 发布 - 订阅 设计模式。 例如，Android系统在发生各种系统事件时发送广播，例如系统启动或设备开始充电时。 例如，应用程序还可以发送自定义广播，以通知其他应用程序他们可能感兴趣的内容（例如，已下载了一些新数据）。 应用可以注册以接收特定广播。当发送广播时，系统自动将广播路由">
+<meta property="og:description" content="当然还有一些没整理好没发上来。  Android Studio疑难杂症：Androoid Studio 踩坑记录 Android基础：四大组件-服务 四大组件-广播 Android进阶：Android开发艺术探索概要1–Activity的生命周期和启动模式 Android开发艺术探索概要2–IPC机制">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://pb2rs4133.bkt.clouddn.com/Screenshot_1541855601.png">
-<meta property="og:updated_time" content="2018-11-10T14:51:01.978Z">
+<meta property="og:updated_time" content="2018-11-24T16:31:34.300Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="四大组件之广播">
-<meta name="twitter:description" content="Broadcast 简述 Android应用可以从Android系统和其他Android应用发送或接收广播消息，类似于 发布 - 订阅 设计模式。 例如，Android系统在发生各种系统事件时发送广播，例如系统启动或设备开始充电时。 例如，应用程序还可以发送自定义广播，以通知其他应用程序他们可能感兴趣的内容（例如，已下载了一些新数据）。 应用可以注册以接收特定广播。当发送广播时，系统自动将广播路由">
-<meta name="twitter:image" content="http://pb2rs4133.bkt.clouddn.com/Screenshot_1541855601.png">
+<meta name="twitter:title" content="Android 学习记录导航页">
+<meta name="twitter:description" content="当然还有一些没整理好没发上来。  Android Studio疑难杂症：Androoid Studio 踩坑记录 Android基础：四大组件-服务 四大组件-广播 Android进阶：Android开发艺术探索概要1–Activity的生命周期和启动模式 Android开发艺术探索概要2–IPC机制">
 
 
 
@@ -121,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://ichanr.github.io/WWWeb/uncategorized/四大组件之广播/">
+  <link rel="canonical" href="https://ichanr.github.io/WWWeb/Android/Android-学习记录导航页/">
 
 
 
 
 
-  <title>四大组件之广播 | Life in a Day</title>
+  <title>Android 学习记录导航页 | Life in a Day</title>
   
 
 
@@ -296,7 +294,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ichanr.github.io/WWWeb/WWWeb/uncategorized/四大组件之广播/">
+    <link itemprop="mainEntityOfPage" href="https://ichanr.github.io/WWWeb/WWWeb/Android/Android-学习记录导航页/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Cai Han Rong">
@@ -313,7 +311,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">四大组件之广播</h1>
+          <h1 class="post-title" itemprop="name headline">Android 学习记录导航页</h1>
         
 
         <div class="post-meta">
@@ -325,8 +323,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-10T15:59:32+08:00">
-                2018-11-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-25T00:24:43+08:00">
+                2018-11-25
               </time>
             
 
@@ -336,6 +334,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/WWWeb/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -343,7 +363,7 @@
 
           
           
-             <span id="/WWWeb/uncategorized/四大组件之广播/" class="leancloud_visitors" data-flag-title="四大组件之广播">
+             <span id="/WWWeb/Android/Android-学习记录导航页/" class="leancloud_visitors" data-flag-title="Android 学习记录导航页">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -374,65 +394,14 @@
       
 
       
-        <h2 id="Broadcast-简述"><a href="#Broadcast-简述" class="headerlink" title="Broadcast 简述"></a><a href="https://developer.android.google.cn/guide/components/broadcasts" target="_blank" rel="noopener">Broadcast</a> 简述</h2><blockquote>
-<p>Android应用可以从Android系统和其他Android应用发送或接收广播消息，类似于 <a href="https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern" target="_blank" rel="noopener">发布 - 订阅</a> 设计模式。</p>
-<p>例如，Android系统在发生各种系统事件时发送广播，例如系统启动或设备开始充电时。</p>
-<p>例如，应用程序还可以发送自定义广播，以通知其他应用程序他们可能感兴趣的内容（例如，已下载了一些新数据）。</p>
-<p>应用可以注册以接收特定广播。当发送广播时，系统自动将广播路由到已订阅接收该特定类型广播的应用。</p>
-<p>一般而言，广播可以用作跨应用程序和普通用户流程之外的消息传递系统。但是，您必须小心，不要滥用机会响应广播并在后台运行可能导致系统性能降低的作业。</p>
-<p>这段是来自谷歌官方的概述。</p>
-<p>因为广播接收器中不能执行耗时操作（最多10s 否则将被停止）因此广播接收器更多的是扮演一种打开成都徐其他组件的角色，比如创建一条状态栏通知，或者启动一个服务等。</p>
+        <blockquote>
+<p>当然还有一些没整理好没发上来。</p>
 </blockquote>
-<h2 id="动态广播"><a href="#动态广播" class="headerlink" title="动态广播"></a>动态广播</h2><blockquote>
-<p>Android 中使用IntentFilter（保存着将要匹配的信息）保存将要发送的广播，用继承自BroadcastReceiver的子类来处理接收到的广播，</p>
-<p>通过Activity的registerReceiver()和unregisterReceiver()来对广播接收器进行绑定和解绑。</p>
-<p>IntentFilter意图过滤器，这个过滤器中可以保存action,categotry,data的信息，只有信息都相同的时候才能匹配成功。</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//先自定义一个广播接收器</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyReceiver</span> <span class="keyword">extends</span> <span class="title">BroadcastReceiver</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onReceive</span><span class="params">(Context context, Intent intent)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// <span class="doctag">TODO:</span> This method is called when the BroadcastReceiver is receiving</span></span><br><span class="line">        <span class="comment">// an Intent broadcast.</span></span><br><span class="line">        <span class="keyword">switch</span> (intent.getAction()) &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">"android.net.conn.CONNECTIVITY_CHANGE"</span>:</span><br><span class="line">                Toast.makeText(context, <span class="string">"接受到广播  网络变化"</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">"abc"</span>:</span><br><span class="line">                Toast.makeText(context, <span class="string">"接受到广播 abc"</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">default</span>:</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//在Activity中绑定广播接收器和要接收的广播</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">		...</span><br><span class="line">        mIntentFilter.addAction(<span class="string">"android.net.conn.CONNECTIVITY_CHANGE"</span>);</span><br><span class="line">        mIntentFilter.addAction(<span class="string">"abc"</span>);</span><br><span class="line">        <span class="comment">//添加将要监听的广播</span></span><br><span class="line">        MyReceiver myReceiver = <span class="keyword">new</span> MyReceiver();</span><br><span class="line">        registerReceiver(myReceiver, mIntentFilter);</span><br><span class="line">        <span class="comment">//绑定广播过滤器和广播接收器</span></span><br><span class="line">       	...</span><br><span class="line">        sendBroadcast(<span class="keyword">new</span> Intent(<span class="string">"abc"</span>)); </span><br><span class="line">        <span class="comment">//网络的变化可以通过手动开关来进行测试，自定义广播可以通过点击触发。</span></span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//别忘了最后还需要解除绑定</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onDestroy</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onDestroy();</span><br><span class="line">        unregisterReceiver(myReceiver);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<pre><code>为什么要解绑呢？
-</code></pre><blockquote>
-<p>s </p>
-</blockquote>
-<h2 id="静态广播"><a href="#静态广播" class="headerlink" title="静态广播"></a>静态广播</h2><blockquote>
-<p>新建一个继承自广播接受类，不过需要注意的是这个类需要在Manifest.xml中注册，否则无法实现静态监听，</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; android:enabled="true"</span><br><span class="line">&gt; android:exported="true"</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>并且这两项都必须设置为true，第一项代表启动这个接收器，第二项属性表示是否接收程序以外的广播。</p>
-<p>并在Manifest.xml中 广播的标签内插入IntentFiler标签指示想要接收到什么广播。</p>
-<p>不过想要获取某些比较特殊的广播你还需要声明一下权限</p>
-<p>比如我们要获取开机启动完成的那个命令就需要声明</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="tag">&lt;<span class="name">uses-permission</span> <span class="attr">android:name</span>=<span class="string">"android.permission.RECEIVE_BOOT_COMPLETED"</span> /&gt;</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>因为静态广播即使程序没有打开也可以被唤醒并接收到广播并作出响应。</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyReceiver</span> <span class="keyword">extends</span> <span class="title">BroadcastReceiver</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onReceive</span><span class="params">(Context context, Intent intent)</span> </span>&#123;</span><br><span class="line">        Toast.makeText(context, <span class="string">"接到广播"</span> + intent.getAction(), Toast.LENGTH_SHORT).show();</span><br><span class="line">        <span class="keyword">switch</span> (intent.getAction()) &#123;</span><br><span class="line">            <span class="keyword">case</span> Intent.ACTION_BOOT_COMPLETED:</span><br><span class="line">                Toast.makeText(context, <span class="string">"接受到广播 重启"</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">default</span>:</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="http://pb2rs4133.bkt.clouddn.com/Screenshot_1541855601.png" alt=""></p>
-<p>重启后验证了我们代码是正确的。</p>
-<h2 id="静态注册和动态注册的区别"><a href="#静态注册和动态注册的区别" class="headerlink" title="静态注册和动态注册的区别"></a>静态注册和动态注册的区别</h2><blockquote>
-<p>在api24级以上，静态注册的广播接收器声明的监听网络状态变化将会不启作用，但是动态注册的仍然可以正常接收广播，这是因为隐式的广播可以启动已注册并监听他的进程，但这些进程大多没什么卵用，还十分的影响用户的体验。所以为了解决这个问题在Android api24里对这些广播做了限制，使接收器不会接收到广播。</p>
-<p>动态注册的接收器只有当前应用被启动并且执行到registerReceiver()才能受到广播。</p>
-<p>静态注册的接收器应用一被安装到手机上时就已经注册好了，一旦收到想要匹配的广播就可以被激活并处理。</p>
-<p>不过有一些广播是无法被静态注册的，比如监听网络的变化，就算你在xml中添加了要匹配的广播也没用，只能动态的注册。</p>
-</blockquote>
-<h2 id="发送广播"><a href="#发送广播" class="headerlink" title="发送广播"></a>发送广播</h2><blockquote>
-<p>不过我们不能发送系统广播，不然将会抛出SecurityException 异常</p>
-<p>想要获取到我们发送的自定义广播只需要在静态注册或者动态注册的action中添加”com.example.aaa” 就可以接收并处理这个广播。</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="string">"com.example.aaa"</span>);</span><br><span class="line">sendBroadcast(intent);</span><br></pre></td></tr></table></figure>
-<h2 id="发送有序广播"><a href="#发送有序广播" class="headerlink" title="发送有序广播"></a>发送有序广播</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sendOrderedBroadcast(intent,<span class="keyword">null</span>);</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>新建应用A和应用B，在应用A中发送和接收有序广播，应用B也接收广播。</p>
-<p>如果A先获取到并调用了abortBroadcast();</p>
-<p>那么B将接收不到广播。</p>
-<p>可以在Manifest.xml中给广播接收器设置优先级，属性为 android:priority=”100”                                           </p>
-</blockquote>
-<h2 id="本地广播"><a href="#本地广播" class="headerlink" title="本地广播"></a>本地广播</h2><blockquote>
-<p>为了避免有的程序疯狂发送垃圾广播或者发送一些携带关键数组的广播被别人捕获而导致的问题，Android引进了一套本地的广播机制，它只能在本应用被发送和接收，接收器也只能接收本应用内的广播这就保证了应用的安全性。</p>
-<p>通过下面的代码可以看到本地广播的用法是和动态注册广播接收器的用法是一样的，只不过是通过LocalBroadcastManager来发送，绑定广播。</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> LocalBroadcastManager localBroadcastManager;</span><br><span class="line"><span class="keyword">private</span> MyReceiver mMyReceiver;</span><br><span class="line"><span class="keyword">private</span> IntentFilter mIntentFilter1;</span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">		</span><br><span class="line">        localBroadcastManager = LocalBroadcastManager.getInstance(<span class="keyword">this</span>);</span><br><span class="line">        <span class="comment">//创建本地广播管理实列</span></span><br><span class="line">		mIntentFilter1 = <span class="keyword">new</span> IntentFilter();</span><br><span class="line">		mIntentFilter1.addAction(<span class="string">"com.example.localbroadcast"</span>);</span><br><span class="line">        </span><br><span class="line">		mMyReceiver = <span class="keyword">new</span> MyReceiver();</span><br><span class="line">		</span><br><span class="line">        localBroadcastManager.registerReceiver(mMyReceiver, mIntentFilter1);</span><br><span class="line">        <span class="comment">//绑定广播接收器和过滤器</span></span><br><span class="line">		mTextView.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">                Intent intent = <span class="keyword">new</span> Intent(<span class="string">"com.example.localbroadcast"</span>);</span><br><span class="line">                localBroadcastManager.sendBroadcast(intent);</span><br><span class="line">                <span class="comment">//发送广播</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Android-Studio疑难杂症："><a href="#Android-Studio疑难杂症：" class="headerlink" title="Android Studio疑难杂症："></a>Android Studio疑难杂症：</h3><p><a href="/WWWeb/Android Studio/Androoid Studio 踩坑记录">Androoid Studio 踩坑记录</a></p>
+<h3 id="Android基础："><a href="#Android基础：" class="headerlink" title="Android基础："></a>Android基础：</h3><p><a href="/WWWeb/Android/四大组件之服务">四大组件-服务</a></p>
+<p><a href="/WWWeb/Android/四大组件之广播">四大组件-广播</a></p>
+<h3 id="Android进阶："><a href="#Android进阶：" class="headerlink" title="Android进阶："></a>Android进阶：</h3><p><a href="/WWWeb/">Android开发艺术探索概要1–Activity的生命周期和启动模式</a></p>
+<p><a href="/WWWeb/Android进阶-IPC机制">Android开发艺术探索概要2–IPC机制</a></p>
 
       
     </div>
@@ -457,8 +426,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/WWWeb/Android/Android-面试题/" rel="next" title="Android 面试题">
-                <i class="fa fa-chevron-left"></i> Android 面试题
+              <a href="/WWWeb/uncategorized/“日常迷茫”/" rel="next" title="“日常迷茫”">
+                <i class="fa fa-chevron-left"></i> “日常迷茫”
               </a>
             
           </div>
@@ -466,10 +435,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/WWWeb/Android/四大组件之服务/" rel="prev" title="四大组件之服务">
-                四大组件之服务 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -548,7 +513,7 @@
               
                 <a href="/WWWeb/archives/">
               
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -594,7 +559,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Broadcast-简述"><span class="nav-number">1.</span> <span class="nav-text">Broadcast 简述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态广播"><span class="nav-number">2.</span> <span class="nav-text">动态广播</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#静态广播"><span class="nav-number">3.</span> <span class="nav-text">静态广播</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#静态注册和动态注册的区别"><span class="nav-number">4.</span> <span class="nav-text">静态注册和动态注册的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发送广播"><span class="nav-number">5.</span> <span class="nav-text">发送广播</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发送有序广播"><span class="nav-number">6.</span> <span class="nav-text">发送有序广播</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地广播"><span class="nav-number">7.</span> <span class="nav-text">本地广播</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-Studio疑难杂症："><span class="nav-number">1.</span> <span class="nav-text">Android Studio疑难杂症：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android基础："><span class="nav-number">2.</span> <span class="nav-text">Android基础：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android进阶："><span class="nav-number">3.</span> <span class="nav-text">Android进阶：</span></a></li></ol></div>
             
 
           </div>
