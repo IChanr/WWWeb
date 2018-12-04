@@ -79,17 +79,21 @@
 
 
 
-<meta name="description" content="hexo clean 清理Hexo的缓存  hexo s –debug 启动本地Hexo站点，并且开启调试模式。  hexo new “pager” 在_posts目录下面创建一个叫pager.md的文件，里面自动帮我满写好了标题和创建事件。  hexo p = hexo publishhexo g = hexo generate 在本地生成html等文件  hexo s = hexo serve">
+<meta name="description" content="先明确一下：  分析Activity的生命周期和 Activity启动模式 IntentFilter的匹配规则   1. Activity的生命周期1.1常规流程  onCreate()   表示Activity被创建 在这个方法中做一些初始化的工作，比如加载布局、初始化一些需要的数据。   onStart()   表示Activity已经可见但还没在前台，无法和用户进行交互。   onResum">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo常用命令">
-<meta property="og:url" content="https://ichanr.github.io/WWWeb/Hexo/Hexo常用命令/index.html">
+<meta property="og:title" content="笔记摘要C1-Activity的生命周期和启动模式">
+<meta property="og:url" content="https://ichanr.github.io/WWWeb/Android/笔记摘要C1-Activity的生命周期和启动模式/index.html">
 <meta property="og:site_name" content="Life in a Day">
-<meta property="og:description" content="hexo clean 清理Hexo的缓存  hexo s –debug 启动本地Hexo站点，并且开启调试模式。  hexo new “pager” 在_posts目录下面创建一个叫pager.md的文件，里面自动帮我满写好了标题和创建事件。  hexo p = hexo publishhexo g = hexo generate 在本地生成html等文件  hexo s = hexo serve">
+<meta property="og:description" content="先明确一下：  分析Activity的生命周期和 Activity启动模式 IntentFilter的匹配规则   1. Activity的生命周期1.1常规流程  onCreate()   表示Activity被创建 在这个方法中做一些初始化的工作，比如加载布局、初始化一些需要的数据。   onStart()   表示Activity已经可见但还没在前台，无法和用户进行交互。   onResum">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-06T04:50:05.441Z">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/a5237847gy1fxsulwqg8rj20yt0u043u.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/a5237847gy1fxsulq3vpfj20l20b8js9.jpg">
+<meta property="og:image" content="http://wx4.sinaimg.cn/mw690/a5237847gy1fxsultbyr8j20s60kngr7.jpg">
+<meta property="og:updated_time" content="2018-12-04T14:12:21.244Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo常用命令">
-<meta name="twitter:description" content="hexo clean 清理Hexo的缓存  hexo s –debug 启动本地Hexo站点，并且开启调试模式。  hexo new “pager” 在_posts目录下面创建一个叫pager.md的文件，里面自动帮我满写好了标题和创建事件。  hexo p = hexo publishhexo g = hexo generate 在本地生成html等文件  hexo s = hexo serve">
+<meta name="twitter:title" content="笔记摘要C1-Activity的生命周期和启动模式">
+<meta name="twitter:description" content="先明确一下：  分析Activity的生命周期和 Activity启动模式 IntentFilter的匹配规则   1. Activity的生命周期1.1常规流程  onCreate()   表示Activity被创建 在这个方法中做一些初始化的工作，比如加载布局、初始化一些需要的数据。   onStart()   表示Activity已经可见但还没在前台，无法和用户进行交互。   onResum">
+<meta name="twitter:image" content="http://wx1.sinaimg.cn/mw690/a5237847gy1fxsulwqg8rj20yt0u043u.jpg">
 
 
 
@@ -119,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://ichanr.github.io/WWWeb/Hexo/Hexo常用命令/">
+  <link rel="canonical" href="https://ichanr.github.io/WWWeb/Android/笔记摘要C1-Activity的生命周期和启动模式/">
 
 
 
 
 
-  <title>Hexo常用命令 | Life in a Day</title>
+  <title>笔记摘要C1-Activity的生命周期和启动模式 | Life in a Day</title>
   
 
 
@@ -294,7 +298,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ichanr.github.io/WWWeb/WWWeb/Hexo/Hexo常用命令/">
+    <link itemprop="mainEntityOfPage" href="https://ichanr.github.io/WWWeb/WWWeb/Android/笔记摘要C1-Activity的生命周期和启动模式/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Cai Han Rong">
@@ -311,7 +315,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo常用命令</h1>
+          <h1 class="post-title" itemprop="name headline">笔记摘要C1-Activity的生命周期和启动模式</h1>
         
 
         <div class="post-meta">
@@ -323,8 +327,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-06T11:02:01+08:00">
-                2018-11-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-01T08:15:42+08:00">
+                2018-12-01
               </time>
             
 
@@ -346,8 +350,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/WWWeb/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/WWWeb/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
                   </a>
                 </span>
 
@@ -363,7 +367,7 @@
 
           
           
-             <span id="/WWWeb/Hexo/Hexo常用命令/" class="leancloud_visitors" data-flag-title="Hexo常用命令">
+             <span id="/WWWeb/Android/笔记摘要C1-Activity的生命周期和启动模式/" class="leancloud_visitors" data-flag-title="笔记摘要C1-Activity的生命周期和启动模式">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -394,24 +398,174 @@
       
 
       
-        <h3 id="hexo-clean"><a href="#hexo-clean" class="headerlink" title="hexo clean"></a>hexo clean</h3><blockquote>
-<p>清理Hexo的缓存</p>
+        <h1 id="先明确一下："><a href="#先明确一下：" class="headerlink" title="先明确一下："></a>先明确一下：</h1><blockquote>
+<ol>
+<li>分析Activity的生命周期和</li>
+<li>Activity启动模式</li>
+<li>IntentFilter的匹配规则</li>
+</ol>
 </blockquote>
-<h3 id="hexo-s-–debug"><a href="#hexo-s-–debug" class="headerlink" title="hexo s –debug"></a>hexo s –debug</h3><blockquote>
-<p>启动本地Hexo站点，并且开启调试模式。</p>
+<h1 id="1-Activity的生命周期"><a href="#1-Activity的生命周期" class="headerlink" title="1. Activity的生命周期"></a><a href="https://developer.android.google.cn/guide/components/activities" target="_blank" rel="noopener">1. Activity的生命周期</a></h1><h2 id="1-1常规流程"><a href="#1-1常规流程" class="headerlink" title="1.1常规流程"></a>1.1常规流程</h2><p><img src="http://wx1.sinaimg.cn/mw690/a5237847gy1fxsulwqg8rj20yt0u043u.jpg" alt=""></p>
+<ol>
+<li><p><code>onCreate()</code> </p>
+<ol>
+<li>表示Activity被创建</li>
+<li>在这个方法中做一些初始化的工作，比如加载布局、初始化一些需要的数据。</li>
+</ol>
+</li>
+<li><p><code>onStart()</code> </p>
+<ol>
+<li>表示Activity已经可见但还没在前台，无法和用户进行交互。</li>
+</ol>
+</li>
+<li><p><code>onResume()</code> </p>
+<ol>
+<li>表示Activity已经可见了并且已经位于前台了，可以和用户进行交互。</li>
+</ol>
+</li>
+<li><p><code>onPause()</code> </p>
+<ol>
+<li>表示Activity正在停止。</li>
+<li>可以进行一些轻量级操作（数据存储、动画的停止等）但不能太耗时，因为会影响新的Activity的打开。</li>
+</ol>
+</li>
+<li><p><code>onStop()</code> </p>
+<ol>
+<li>表示Activity即将停止，同样不能太过耗时。</li>
+</ol>
+</li>
+<li><p><code>onRestart()</code> </p>
+<ol>
+<li>表示Activity正在重新启动，一般由Activity由不可见变为可见状态时被调用。</li>
+</ol>
+</li>
+<li><p><code>onDestroy()</code> </p>
+<ol>
+<li>表示Activity即将被销毁，这是生命周期中的最后一个回调。</li>
+<li>可以做一些回收工作和最终的资源释放。</li>
+</ol>
+</li>
+</ol>
+<p>## </p>
+<p>​    Activity-A 启动 Activity-B</p>
+<blockquote>
+<ol>
+<li><code>启动主题为透明的活动</code>: A.onPause() -&gt;B.onCreate()-&gt;B.onStart()-&gt;B.onResume()            A的onStop()方法不会被回调因为他还属于可见状态</li>
+<li><code>在B按Back键返回A</code>: B.onPause()-&gt;A.Restart()-&gt;A.onStart-&gt;A.onResume()-&gt;B.onStop()-&gt;B.onDestroy()</li>
+</ol>
 </blockquote>
-<h3 id="hexo-new-“pager”"><a href="#hexo-new-“pager”" class="headerlink" title="hexo new “pager”"></a>hexo new “pager”</h3><blockquote>
-<p>在_posts目录下面创建一个叫pager.md的文件，里面自动帮我满写好了标题和创建事件。</p>
+<h2 id="1-2特殊情况："><a href="#1-2特殊情况：" class="headerlink" title="1.2特殊情况："></a>1.2特殊情况：</h2><h3 id="1-2-1系统配置发生改变导致Acitivty被摧毁重建。"><a href="#1-2-1系统配置发生改变导致Acitivty被摧毁重建。" class="headerlink" title="1.2.1系统配置发生改变导致Acitivty被摧毁重建。"></a>1.2.1系统配置发生改变导致Acitivty被摧毁重建。</h3><h4 id="重建流程"><a href="#重建流程" class="headerlink" title="重建流程"></a>重建流程</h4><p><img src="http://wx3.sinaimg.cn/mw690/a5237847gy1fxsulq3vpfj20l20b8js9.jpg" alt=""></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzA5MzI3NjE2MA==&amp;mid=2650240253&amp;idx=1&amp;sn=33e7e2f57536c4b754d42e42d5a1aa00&amp;chksm=88638592bf140c84fa5724fa3e44ba7c72447a226157e16a2802e242305e75c97f80a8af82d8&amp;scene=38#wechat_redirect" target="_blank" rel="noopener">关于onSaveInstanceState和Restor的源码分析</a></p>
+<h4 id="禁止重建Activity"><a href="#禁止重建Activity" class="headerlink" title="禁止重建Activity"></a>禁止重建Activity</h4><blockquote>
+<p>AndroidManifest.xml文件中，修改Activity的configChanges属性多个值以|符号来并列，如果系统发生的变化和已经被声明了那么Activity就不会发生重建。具体的填写内容看下面的表格</p>
+<p>onRestoreInstanceState和onSaveInstanceState都不会被调用了，会回调这个方法onConfigurationChanged</p>
 </blockquote>
-<h3 id="hexo-p-hexo-publish"><a href="#hexo-p-hexo-publish" class="headerlink" title="hexo p = hexo publish"></a>hexo p = hexo publish</h3><h3 id="hexo-g-hexo-generate"><a href="#hexo-g-hexo-generate" class="headerlink" title="hexo g = hexo generate"></a>hexo g = hexo generate</h3><blockquote>
-<p>在本地生成html等文件</p>
+<p><img src="http://wx4.sinaimg.cn/mw690/a5237847gy1fxsultbyr8j20s60kngr7.jpg" alt=""></p>
+<h3 id="1-2-2系统资源不足，导致优先级低的Activity被回收"><a href="#1-2-2系统资源不足，导致优先级低的Activity被回收" class="headerlink" title="1.2.2系统资源不足，导致优先级低的Activity被回收"></a>1.2.2系统资源不足，导致优先级低的Activity被回收</h3><h1 id="2-Activity的启动模式"><a href="#2-Activity的启动模式" class="headerlink" title="2. Activity的启动模式"></a>2. Activity的启动模式</h1><h2 id="2-1四种模式"><a href="#2-1四种模式" class="headerlink" title="2.1四种模式"></a>2.1四种模式</h2><table>
+<thead>
+<tr>
+<th>模式</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>standard</td>
+<td>标准模式（默认），每启动一个activity都会新建一个新的实例并入栈。</td>
+</tr>
+<tr>
+<td>singleTop</td>
+<td>栈顶复用，如果要启动的activity已经位于栈顶了，此activity不会重新创建，反而会调用他的onNewIntent方法。可以同传入的Intent参数获取传进来的值。</td>
+</tr>
+<tr>
+<td>singleTask</td>
+<td>栈内复用，只要即将启动的Activity已经在栈中了，那么不会传创建新的实例，并回调他会onNewIntent方法，并且自己帮我们移除栈内要启动的activity前的所有activity。</td>
+</tr>
+<tr>
+<td>singleInstance</td>
+<td>单实例模式，加强版的singleTask 使用该启动模式的activity只能单独的位于一个任务栈中。</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-2Intent的标志位"><a href="#2-2Intent的标志位" class="headerlink" title="2.2Intent的标志位"></a>2.2Intent的标志位</h2><h2 id="2-3总结"><a href="#2-3总结" class="headerlink" title="2.3总结"></a>2.3总结</h2><blockquote>
+<p>也就两种方式</p>
+<p>AndroidManiFest.xml中</p>
+<p>设置TaskAffinity属性可以设置任务栈的名称；</p>
+<p>设置launchMode属性设置启动模式。</p>
+<p>需要注意的是TaskAffinity属性不能和包名相同(格式要对)，主要和singleTask启动模式或者allowTaskReparenting属性配对使用。</p>
 </blockquote>
-<h3 id="hexo-s-hexo-server"><a href="#hexo-s-hexo-server" class="headerlink" title="hexo s = hexo server"></a>hexo s = hexo server</h3><blockquote>
-<p>在本地启动服务预览，可以查看生成的静态网页是什么样子的。</p>
+<blockquote>
+<p>在AndroidManiFest.xml中使用和在Intent中添加标志位都可以设置activity的启动模式。</p>
+<p>其中Intent中设置标志位的优先级比较高。</p>
 </blockquote>
-<h3 id="hexo-d-hexo-deploy"><a href="#hexo-d-hexo-deploy" class="headerlink" title="hexo d = hexo deploy"></a>hexo d = hexo deploy</h3><blockquote>
-<p>将本地生成的网页部署到其他地方。</p>
+<h1 id="3-IntentFilter匹配规则"><a href="#3-IntentFilter匹配规则" class="headerlink" title="3.IntentFilter匹配规则"></a><a href="https://developer.android.google.cn/guide/components/intents-filters" target="_blank" rel="noopener">3.IntentFilter匹配规则</a></h1><h2 id="3-1显式调用"><a href="#3-1显式调用" class="headerlink" title="3.1显式调用"></a>3.1显式调用</h2><blockquote>
+<p>很简单,直接在Intent里面设置想要启动的Activity。</p>
 </blockquote>
+<h2 id="3-2隐式调用"><a href="#3-2隐式调用" class="headerlink" title="3.2隐式调用"></a>3.2隐式调用</h2><blockquote>
+<p>需要和AndroidManiFest.xml组件中设置的IntentFilter信息匹配（action、category、data）</p>
+<ol>
+<li>一个组件如果有多个intent-filter,那只要匹配到其中的一个intent-filter就可以启动该组件。</li>
+<li>不管给Intetn设置了多少个action、data、category都要能和intent-filter匹配才能启动成功。</li>
+<li>可以不设置category，因为startactivity默认会自己为我们加上。</li>
+<li>data由两部分组成mimeType、URI；其中mimeType指媒体类型比如image/jpeg\audio/mpeg4-generic等不同的媒体格式；URI类似访问网站的域名去掉协议那部分，URI的默认值为”content:// <strong> “ ，艺术探索上面说file:// </strong>  也可以不过在8.0上直接匹配失败，5.0正常使用。</li>
+<li>详细的官方文档：<a href="https://developer.android.google.cn/guide/components/intents-filters#DataTest" target="_blank" rel="noopener">https://developer.android.google.cn/guide/components/intents-filters#DataTest</a> </li>
+</ol>
+</blockquote>
+<p><strong>有点痴呆</strong>：Intent已经显示调用了我还在intent里面设置action、category等东西，还好改过来了，然后呢，如果Intent-Filter中action、data、category都有的话，除了category不用附加其他的都需要附加否则会造成不匹配，Intent-Filter不匹配的话会报错，那样程序就挂了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android.content.ActivityNotFoundException: No Activity found to handle Intent &#123; act=com.example.d &#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>data的完整格式：<scheme>://<host>:<port>[<path>|<pathprefix>|<pathpattern>]</pathpattern></pathprefix></path></port></host></scheme></p>
+<p>data的匹配过程是渐进的，如果过滤器未设置scheme就忽略其他的URI属性，host未设置则后面的port等都会被忽略掉不会进行匹配</p>
+<p>Intent中如果要设置完成的URI不要分开调用setType()和setData(),因为他们会互相清空对方的值，这点可以通过阅读代码验证。应该调用setDataAndType()方法。</p>
+</blockquote>
+<blockquote>
+<p>AndroidManiFest.xml中一定要设置一个</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>startactivity会自动帮我们附加上该category，如果不设置会导致匹配失败。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>匹配规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>action</td>
+<td>区分大小写，附加的action都要在过滤器中匹配成功才能启动。</td>
+</tr>
+<tr>
+<td>category</td>
+<td>同上，只不过默认intent可以不填写，让startactivity自动帮我们填写</td>
+</tr>
+<tr>
+<td>data</td>
+<td>和action一样。</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="还有一点很不爽隐式调用失败程序就崩溃了可以用下面的方法解决。"><a href="#还有一点很不爽隐式调用失败程序就崩溃了可以用下面的方法解决。" class="headerlink" title="还有一点很不爽隐式调用失败程序就崩溃了可以用下面的方法解决。"></a>还有一点很不爽隐式调用失败程序就崩溃了可以用下面的方法解决。</h3><blockquote>
+<p>通过PackageManager提供的quertIntentActivityes和resolveActivity方法来查询。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">if</span> (getPackageManager().queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY) != <span class="keyword">null</span></span><br><span class="line">&gt;         &amp;&amp; getPackageManager().resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY) != <span class="keyword">null</span>) &#123;</span><br><span class="line">&gt;     startActivity(intent);</span><br><span class="line">&gt; &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">&gt;     Log.d(TAG, <span class="string">"onClick: 匹配不到，取消"</span>);</span><br><span class="line">&gt; &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>主要就是第二个参数，使用这个参数表示只匹配那些在Intent-Filter中声明了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>的Activity。</p>
+<p>getPackageManager().queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY)<br>该方法查询匹配到的Activity列表，不存在他返回一个size为0的列表，不是null和说明的文档不一样<br>getPackageManager().resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY)<br>该方法查询并返回匹配到的确切的活动意图，不存在就返回空</p>
+</blockquote>
+<p>这样就可以避免因为隐式调用而导致程序的崩溃了。</p>
 
       
     </div>
@@ -436,8 +590,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/WWWeb/Hexo/Hexo使用记录导航/" rel="next" title="Hexo使用记录导航">
-                <i class="fa fa-chevron-left"></i> Hexo使用记录导航
+              <a href="/WWWeb/Android/Android-学习记录导航页/" rel="next" title="Android 学习记录导航页">
+                <i class="fa fa-chevron-left"></i> Android 学习记录导航页
               </a>
             
           </div>
@@ -445,10 +599,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/WWWeb/Hexo/Hexo环境搭建/" rel="prev" title="Hexo环境搭建">
-                Hexo环境搭建 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -573,7 +723,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-clean"><span class="nav-number">1.</span> <span class="nav-text">hexo clean</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-s-–debug"><span class="nav-number">2.</span> <span class="nav-text">hexo s –debug</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-new-“pager”"><span class="nav-number">3.</span> <span class="nav-text">hexo new “pager”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-p-hexo-publish"><span class="nav-number">4.</span> <span class="nav-text">hexo p = hexo publish</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-g-hexo-generate"><span class="nav-number">5.</span> <span class="nav-text">hexo g = hexo generate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-s-hexo-server"><span class="nav-number">6.</span> <span class="nav-text">hexo s = hexo server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-d-hexo-deploy"><span class="nav-number">7.</span> <span class="nav-text">hexo d = hexo deploy</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#先明确一下："><span class="nav-number">1.</span> <span class="nav-text">先明确一下：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-Activity的生命周期"><span class="nav-number">2.</span> <span class="nav-text">1. Activity的生命周期</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1常规流程"><span class="nav-number">2.1.</span> <span class="nav-text">1.1常规流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2特殊情况："><span class="nav-number">2.2.</span> <span class="nav-text">1.2特殊情况：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-1系统配置发生改变导致Acitivty被摧毁重建。"><span class="nav-number">2.2.1.</span> <span class="nav-text">1.2.1系统配置发生改变导致Acitivty被摧毁重建。</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#重建流程"><span class="nav-number">2.2.1.1.</span> <span class="nav-text">重建流程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#禁止重建Activity"><span class="nav-number">2.2.1.2.</span> <span class="nav-text">禁止重建Activity</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-2系统资源不足，导致优先级低的Activity被回收"><span class="nav-number">2.2.2.</span> <span class="nav-text">1.2.2系统资源不足，导致优先级低的Activity被回收</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-Activity的启动模式"><span class="nav-number">3.</span> <span class="nav-text">2. Activity的启动模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1四种模式"><span class="nav-number">3.1.</span> <span class="nav-text">2.1四种模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2Intent的标志位"><span class="nav-number">3.2.</span> <span class="nav-text">2.2Intent的标志位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3总结"><span class="nav-number">3.3.</span> <span class="nav-text">2.3总结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-IntentFilter匹配规则"><span class="nav-number">4.</span> <span class="nav-text">3.IntentFilter匹配规则</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1显式调用"><span class="nav-number">4.1.</span> <span class="nav-text">3.1显式调用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2隐式调用"><span class="nav-number">4.2.</span> <span class="nav-text">3.2隐式调用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#还有一点很不爽隐式调用失败程序就崩溃了可以用下面的方法解决。"><span class="nav-number">4.2.1.</span> <span class="nav-text">还有一点很不爽隐式调用失败程序就崩溃了可以用下面的方法解决。</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
