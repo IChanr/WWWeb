@@ -88,17 +88,17 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[Hexo使用记录]]></title>
-    <url>%2FWWWeb%2FHexo%2FHexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95%E5%AF%BC%E8%88%AA%2F</url>
-    <content type="text"><![CDATA[Hexo常用命令 Hexo环境搭建 Hexo界面配置 Hexo部署到GitHub]]></content>
+    <title><![CDATA[Hexo常用命令]]></title>
+    <url>%2FWWWeb%2FHexo%2FHexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[hexo clean 清理Hexo的缓存 hexo s –debug 启动本地Hexo站点，并且开启调试模式。 hexo new “pager” 在_posts目录下面创建一个叫pager.md的文件，里面自动帮我满写好了标题和创建事件。 hexo p = hexo publishhexo g = hexo generate 在本地生成html等文件 hexo s = hexo server 在本地启动服务预览，可以查看生成的静态网页是什么样子的。 hexo d = hexo deploy 将本地生成的网页部署到其他地方。]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[Hexo常用命令]]></title>
-    <url>%2FWWWeb%2FHexo%2FHexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[hexo clean 清理Hexo的缓存 hexo s –debug 启动本地Hexo站点，并且开启调试模式。 hexo new “pager” 在_posts目录下面创建一个叫pager.md的文件，里面自动帮我满写好了标题和创建事件。 hexo p = hexo publishhexo g = hexo generate 在本地生成html等文件 hexo s = hexo server 在本地启动服务预览，可以查看生成的静态网页是什么样子的。 hexo d = hexo deploy 将本地生成的网页部署到其他地方。]]></content>
+    <title><![CDATA[Hexo使用记录]]></title>
+    <url>%2FWWWeb%2FHexo%2FHexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95%E5%AF%BC%E8%88%AA%2F</url>
+    <content type="text"><![CDATA[Hexo常用命令 Hexo环境搭建 Hexo界面配置 Hexo部署到GitHub]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
