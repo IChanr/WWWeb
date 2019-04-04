@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Life in a Day">
 <meta property="og:description" content="1. 快捷键:    快捷键 说明     Ctrl+Q 显示当前调用的方法的参数说明   Ctrl+Shift+F10 编译并运行程序   Ctrl+Alt+L 格式化代码,并自动对齐   Alt+Insert 快速插入get/set方法,以及构造方法等.. 经常需要重写的方法   Ctrl+Insert 快速新建一个类,活动或者服务   Ctrl+Alt+Left/Right 选中往左/右的一">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-04T14:26:19.781Z">
+<meta property="og:updated_time" content="2019-01-03T03:09:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AndroidStudio踩坑与技巧">
 <meta name="twitter:description" content="1. 快捷键:    快捷键 说明     Ctrl+Q 显示当前调用的方法的参数说明   Ctrl+Shift+F10 编译并运行程序   Ctrl+Alt+L 格式化代码,并自动对齐   Alt+Insert 快速插入get/set方法,以及构造方法等.. 经常需要重写的方法   Ctrl+Insert 快速新建一个类,活动或者服务   Ctrl+Alt+Left/Right 选中往左/右的一">
@@ -452,8 +452,20 @@
 <td style="text-align:left">快速跳转到代码报错的那一行</td>
 </tr>
 <tr>
-<td style="text-align:left"></td>
-<td style="text-align:left"></td>
+<td style="text-align:left">Ctrl  + [/]</td>
+<td style="text-align:left">快速跳转到当前代码的{后面，或者}前面</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl + W</td>
+<td style="text-align:left">快速选中代码，连续按选择的范围越来越大。</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl + Q</td>
+<td style="text-align:left">显示方法的注释文档</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl + P</td>
+<td style="text-align:left">显示方法的参数提示</td>
 </tr>
 <tr>
 <td style="text-align:left"></td>
@@ -461,6 +473,36 @@
 </tbody>
 </table>
 </blockquote>
+<h2 id="查看源码相关快捷键"><a href="#查看源码相关快捷键" class="headerlink" title="查看源码相关快捷键"></a>查看源码相关快捷键</h2><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>作用</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl + N</td>
+<td>查找类</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + N</td>
+<td>查找文件</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl + B</td>
+<td>查看变量的来源，和按Ctrl+鼠标左击效果是一样的</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl + H</td>
+<td>显示当前类的继承结构</td>
+</tr>
+</tbody>
+</table>
 <h1 id="2-故障解决"><a href="#2-故障解决" class="headerlink" title="2. 故障解决:"></a>2. 故障解决:</h1><h3 id="1-运行安卓虚拟机出现-Emulator-Could-not-launch-‘C-Users-H-AppData-Local-Android-Sdk-emulator-qemu-windows-x86-64-qemu-system-i386-exe’-No-such-file-or-directory"><a href="#1-运行安卓虚拟机出现-Emulator-Could-not-launch-‘C-Users-H-AppData-Local-Android-Sdk-emulator-qemu-windows-x86-64-qemu-system-i386-exe’-No-such-file-or-directory" class="headerlink" title="1. 运行安卓虚拟机出现:Emulator: Could not launch ‘C:\Users\H\AppData\Local\Android\Sdk\emulator/qemu/windows-x86_64/qemu-system-i386.exe’: No such file or directory"></a>1. 运行安卓虚拟机出现:Emulator: Could not launch ‘C:\Users\H\AppData\Local\Android\Sdk\emulator/qemu/windows-x86_64/qemu-system-i386.exe’: No such file or directory</h3><blockquote>
 <p>进入SDK Manager/SDK Tools 中将Android Emulator选中,点击apply等待下载完毕以后,确定退出,重新启动模拟器就可以运行了.</p>
 </blockquote>
@@ -490,6 +532,10 @@
 <h2 id="6-2查看命令"><a href="#6-2查看命令" class="headerlink" title="6.2查看命令"></a>6.2查看命令</h2><blockquote>
 <p><code>获取activity任务栈</code>  adb shell dumpsys activity</p>
 <p><code></code></p>
+</blockquote>
+<h2 id="7-快速代码模板"><a href="#7-快速代码模板" class="headerlink" title="7. 快速代码模板"></a>7. 快速代码模板</h2><blockquote>
+<p>Setting-&gt;Ediitor-&gt;Live Templates</p>
+<p>在里面随便找个目录点击右侧加号开始设置。</p>
 </blockquote>
 
       
@@ -652,7 +698,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-快捷键"><span class="nav-number">1.</span> <span class="nav-text">1. 快捷键:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-故障解决"><span class="nav-number">2.</span> <span class="nav-text">2. 故障解决:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-运行安卓虚拟机出现-Emulator-Could-not-launch-‘C-Users-H-AppData-Local-Android-Sdk-emulator-qemu-windows-x86-64-qemu-system-i386-exe’-No-such-file-or-directory"><span class="nav-number">2.0.1.</span> <span class="nav-text">1. 运行安卓虚拟机出现:Emulator: Could not launch ‘C:\Users\H\AppData\Local\Android\Sdk\emulator/qemu/windows-x86_64/qemu-system-i386.exe’: No such file or directory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-如何重启android-studio的虚拟机"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.如何重启android studio的虚拟机</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#3-怎么看调用一个方法时需要的参数？"><span class="nav-number">3.</span> <span class="nav-text">3.怎么看调用一个方法时需要的参数？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-写代码时，发现某个地方有下划红线怎么快速跳转到这个地方？"><span class="nav-number">4.</span> <span class="nav-text">4.写代码时，发现某个地方有下划红线怎么快速跳转到这个地方？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-想在使用-butterknife的时候，-bindview（R-id-tv）-TextView-textview-代码格式化以后还在同一行"><span class="nav-number">5.</span> <span class="nav-text">5.想在使用 butterknife的时候，@bindview（R.id.tv） TextView textview 代码格式化以后还在同一行</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-常用的ADB命令"><span class="nav-number">6.</span> <span class="nav-text">6.常用的ADB命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#6-1基本的命令"><span class="nav-number">6.1.</span> <span class="nav-text">6.1基本的命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-2查看命令"><span class="nav-number">6.2.</span> <span class="nav-text">6.2查看命令</span></a></li></ol></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-快捷键"><span class="nav-number">1.</span> <span class="nav-text">1. 快捷键:</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看源码相关快捷键"><span class="nav-number">1.1.</span> <span class="nav-text">查看源码相关快捷键</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-故障解决"><span class="nav-number">2.</span> <span class="nav-text">2. 故障解决:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-运行安卓虚拟机出现-Emulator-Could-not-launch-‘C-Users-H-AppData-Local-Android-Sdk-emulator-qemu-windows-x86-64-qemu-system-i386-exe’-No-such-file-or-directory"><span class="nav-number">2.0.1.</span> <span class="nav-text">1. 运行安卓虚拟机出现:Emulator: Could not launch ‘C:\Users\H\AppData\Local\Android\Sdk\emulator/qemu/windows-x86_64/qemu-system-i386.exe’: No such file or directory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-如何重启android-studio的虚拟机"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.如何重启android studio的虚拟机</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#3-怎么看调用一个方法时需要的参数？"><span class="nav-number">3.</span> <span class="nav-text">3.怎么看调用一个方法时需要的参数？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-写代码时，发现某个地方有下划红线怎么快速跳转到这个地方？"><span class="nav-number">4.</span> <span class="nav-text">4.写代码时，发现某个地方有下划红线怎么快速跳转到这个地方？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-想在使用-butterknife的时候，-bindview（R-id-tv）-TextView-textview-代码格式化以后还在同一行"><span class="nav-number">5.</span> <span class="nav-text">5.想在使用 butterknife的时候，@bindview（R.id.tv） TextView textview 代码格式化以后还在同一行</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-常用的ADB命令"><span class="nav-number">6.</span> <span class="nav-text">6.常用的ADB命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#6-1基本的命令"><span class="nav-number">6.1.</span> <span class="nav-text">6.1基本的命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-2查看命令"><span class="nav-number">6.2.</span> <span class="nav-text">6.2查看命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-快速代码模板"><span class="nav-number">6.3.</span> <span class="nav-text">7. 快速代码模板</span></a></li></ol></li></div>
             
 
           </div>
@@ -672,7 +718,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
